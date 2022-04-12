@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="466.0" prefWidth="625.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="animalresque.ui.main.VollistFXMLController">
+   <children>
+      <Pane prefHeight="73.0" prefWidth="625.0" style="-fx-background-color: #28A1F1;">
+         <children>
+            <Label layoutX="112.0" layoutY="21.0" prefHeight="17.0" prefWidth="151.0" text="Volunteer List" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TableView fx:id="voltable" layoutX="36.0" layoutY="123.0" prefHeight="264.0" prefWidth="554.0">
+        <columns>
+          <TableColumn fx:id="vc1" prefWidth="122.66665267944336" text="Name" />
+          <TableColumn fx:id="vc2" prefWidth="73.99996948242188" text="Age" />
+            <TableColumn fx:id="vc3" prefWidth="185.33335876464844" text="Mobile no." />
+            <TableColumn fx:id="vc4" minWidth="0.0" prefWidth="95.33340454101562" text="Vol. ID" />
+            <TableColumn fx:id="vc5" prefWidth="75.0" text="Points" />
+        </columns>
+      </TableView>
+      <Button fx:id="vbt1" layoutX="283.0" layoutY="407.0" mnemonicParsing="false" onAction="#volgoBack" text="Go Back" />
+   </children>
+</AnchorPane>
